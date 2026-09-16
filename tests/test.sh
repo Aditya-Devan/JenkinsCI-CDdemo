@@ -1,0 +1,11 @@
+#!/bin/bash
+
+output=$(./app/app.sh)
+
+if [[ "$output" == *"Application is running successfully!"* ]]; then
+    echo "TEST PASSED"
+    exit 0
+else
+    echo "TEST FAILED"
+    exit 1
+fi
